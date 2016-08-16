@@ -1,0 +1,12 @@
+.DS_Store
+.idea/
+.gradle/
+build/
+target/
+*.iml
+*.iml
+*.ipr
+*.iws
+*.sqlite
+*.env
+classes/
