@@ -1,5 +1,5 @@
 # Blog Phone Verification Servlets
-
+[![Java Servlet CI](https://github.com/TwilioDevEd/blog-phone-verification-servlets/actions/workflows/gradle.yml/badge.svg)](https://github.com/TwilioDevEd/blog-phone-verification-servlets/actions/workflows/gradle.yml)
 
 ## Local Development
 
