@@ -18,7 +18,7 @@ public class CallServlet extends HttpServlet {
 
     public CallServlet() {
         this.callFactory = new TwilioRestClient(
-                Constants.TWILIO_ACCOUNT_SID, Constants.TWILIO_AUTH_TOKEN
+                Config.getAccountSid(), Config.getAuthToken()
         ).getAccount().getCallFactory();
     }
 
@@ -32,9 +32,9 @@ public class CallServlet extends HttpServlet {
             NumberRepository.save(new Number(phoneNumber, verificationCode));
 
             callFactory.create(asList(
-                    new BasicNameValuePair("From", Constants.TWILIO_PHONE_NUMBER),
+                    new BasicNameValuePair("From", Config.getPhoneNumber()),
                     new BasicNameValuePair("To", phoneNumber),
-                    new BasicNameValuePair("Url", Constants.TWILIO_SERVER_URL)
+                    new BasicNameValuePair("Url", Config.getServerUrl())
             ));
 
             resp.setContentType("application/json");
