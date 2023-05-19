@@ -15,7 +15,7 @@ dependencies {
     compile 'com.twilio.sdk:twilio-java-sdk:6.3.0'
     compile 'org.eclipse.persistence:javax.persistence:2.1.1'
     compile 'org.eclipse.persistence:org.eclipse.persistence.jpa:2.6.3'
-    compile 'org.xerial:sqlite-jdbc:3.8.11.2'
+    compile 'org.xerial:sqlite-jdbc:3.41.2.2'
     compile 'com.google.code.gson:gson:2.7'
     compile 'io.github.cdimascio:dotenv-java:2.2.0'
 
